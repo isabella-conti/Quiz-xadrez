@@ -32,3 +32,49 @@ body{
 
 }
 
+.questions-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(97, 1, 126);
+}
+.answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.next-question{
+    margin-top: 32px;
+}
+
+.button{
+    background-color: blanchedalmond;
+    color: rgb(130, 4, 168);
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px ;
+
+    transition: filter 0.2s;
+}
+
+.button:hover{
+    filter:brightness(0.8);
+}
+
+.hide{
+    display: none;
+}
