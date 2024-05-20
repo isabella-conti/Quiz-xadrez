@@ -17,6 +17,19 @@ function displayNextQuestion() {
     while($answersContainer.firstChild) {
         $answersContainer.removeChild($answersContainer.firstChild)
     }
+
+    $questionText.textContent = questions[currentQuestionIndex].question
+    questions[currentQuestionIndex].answers.forEach(answer => {
+        const newAnswer = document.createElement("button")
+        newAnswer.classList.add("button", "answer")
+        newAnswer.textContent = answer.text
+        if (answer.correct){
+            newAnswer.dataset.correct = answer.correct
+        }
+        $answersContainer.appendChild(newAnswer)
+    } )
+
+
 }
 
 
