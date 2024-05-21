@@ -101,10 +101,6 @@ function finishGame() {
         </button>
 
     `
-
-
-    
-
 }
 
 

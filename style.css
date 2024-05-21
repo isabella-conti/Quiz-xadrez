@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,18 +11,27 @@
 }
 
 body{
-    background-color:blueviolet;
+    background-image: url('./background-inicio.png');
+    background-size: 90%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    body {
+        background-image: url('./background-menor.png');
+        background-size: cover; /* Ajuste o tamanho da imagem conforme necessário */
+    }
+}
+
 .container {
-    background-color: brown;
+    z-index: 0;
+    background-color: #23bfe6;
     width: 90%;
     max-width: 800px;
-    border: 2px solid #e1e1e6;
+    border: 2px solid #ba8ac7;
     border-radius: 6px;
     padding: 16px;
     box-shadow: 0 0 2px 2px;
@@ -45,7 +56,7 @@ body{
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: rgb(97, 1, 126);
+    color: rgb(182, 125, 199);
 }
 .answers-container {
     width: 100%;
@@ -59,21 +70,55 @@ body{
 }
 
 .button{
-    background-color: blanchedalmond;
-    color: rgb(130, 4, 168);
-    font-size: 16px;
-    font-weight: bold;
-    border: 0;
-    border-radius: 6px;
-    height: 48px;
-    padding: 0 32px ;
-
-    transition: filter 0.2s;
+    font-size: 1.2em;
+    font-family: 'Press Start 2P', cursive;
+    width: 200px;
+    height: 70px;
+    background: #d45bb6;
+    border: 0px;
+    position: relative;
+    box-shadow: 
+      inset -4px 2px 1px 1px grey,
+      inset -4px -2px 1px 1px lightgray,
+      inset 4px 0px 1px 1px lightgray;  
 }
 
-.button:not(:disabled):hover{
-    filter:brightness(0.8);
-}
+.button:hover {
+    cursor: pointer;
+      background-color: #cc40b5;
+  }
+
+.button:active {
+    top: 5px;
+    box-shadow: 
+      -4px 2px 1px 1px grey,
+      -4px -2px 1px 1px lightgray,
+      4px 0px 1px 1px lightgray; 
+  }
+
+.button::after {
+    content: '';
+    background: black;
+    position: absolute;
+    left: -2.5%;
+    top: 0;
+    width: 105%;
+    height: 100%;
+    z-index: -1;
+  }
+
+
+.button::before {
+    content: '';
+    background: black;
+    position: absolute;
+    left: 0;
+    top: -5%;
+    width: 100%;
+    height: 113%;
+    z-index: -1;
+  }
+
 
 .answer:disabled{
     cursor: not-allowed;
@@ -102,3 +147,4 @@ body{
     margin-top: 8px;
 
 }
+
