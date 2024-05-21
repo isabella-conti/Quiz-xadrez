@@ -104,6 +104,8 @@ function finishGame() {
 }
 
 
+
+
 const questions = [
     {
         question: "Qual o objetivo do xadrez?",
