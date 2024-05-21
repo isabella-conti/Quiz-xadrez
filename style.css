@@ -29,12 +29,13 @@ body{
 .container {
     z-index: 0;
     background-color: #23bfe6;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
-    border: 2px solid #ba8ac7;
-    border-radius: 6px;
-    padding: 16px;
-    box-shadow: 0 0 2px 2px;
+    padding: 32px;
+    box-shadow: 
+    inset -4px 2px 1px 1px grey,
+    inset -4px -2px 1px 1px lightgray,
+    inset 4px 0px 1px 1px lightgray;
 
     display: flex;
     flex-direction: column;
@@ -53,10 +54,11 @@ body{
 }
 
 .question {
+    font-family: 'Press Start 2P', cursive;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: rgb(182, 125, 199);
+    color: rgb(33, 1, 43);
 }
 .answers-container {
     width: 100%;
@@ -72,8 +74,8 @@ body{
 .button{
     font-size: 1.2em;
     font-family: 'Press Start 2P', cursive;
-    width: 200px;
-    height: 70px;
+    width: 350px;
+    height: 90px;
     background: #d45bb6;
     border: 0px;
     position: relative;
