@@ -73,7 +73,7 @@ function selectAnswer(event) {
 
 function finishGame() {
     const totalQuestion = questions.length
-    const performance = Math.floor(totalCorrect / totalQuestion)
+    const performance = Math.floor(totalCorrect * 100 / totalQuestion)
     
     let message = ""
     switch (true) {
