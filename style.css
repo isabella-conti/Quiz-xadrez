@@ -90,3 +90,15 @@ body{
 .incorrect{
     background-color: red;
 }
+
+.final-message{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.final-message span{
+    display: block;
+    margin-top: 8px;
+
+}

@@ -9,6 +9,7 @@ $startGameButton.addEventListener("click", startGame)
 $nextQuestionButton.addEventListener("click", displayNextQuestion)
 
 let currentQuestionIndex = 0
+let totalCorrect = 0
 
 function startGame() {
     $startGameButton.classList.add("hide")
@@ -18,6 +19,10 @@ function startGame() {
 
 function displayNextQuestion() {
     resetState()
+
+    if (questions.length === currentQuestionIndex) {
+        return finishGame()
+    }
 
     $questionText.textContent = questions[currentQuestionIndex].question
     questions[currentQuestionIndex].answers.forEach(answer => {
@@ -47,6 +52,7 @@ function selectAnswer(event) {
     
     if (answerClicked.dataset.correct) {
         document.body.classList.add("correct")
+        totalCorrect++
     } else {
         document.body.classList.add("incorrect")
     }
@@ -62,6 +68,42 @@ function selectAnswer(event) {
 
     $nextQuestionButton.classList.remove("hide")
     currentQuestionIndex++
+
+}
+
+function finishGame() {
+    const totalQuestion = questions.length
+    const performance = Math.floor(totalCorrect / totalQuestion)
+    
+    let message = ""
+    switch (true) {
+        case (performance>=90):
+            message = "Excelente! :)"
+            break
+        case (performance>=70):
+            message = "Muito bom! :)"
+            break
+        case (performance>=50):
+            message = "Bom"
+            break
+        default:
+            message = "Pode melhorar :("   
+    }
+
+    $questionsContainer.innerHTML =
+    `
+        <p class="final-message">
+            Você acertou ${totalCorrect} de ${totalQuestion} questões!
+            <span> Resultado: ${message} </span>
+        </p>
+        <button onClick=window.location.reload() class="button">
+            Refazer teste
+        </button>
+
+    `
+
+
+    
 
 }
 
