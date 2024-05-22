@@ -49,3 +49,12 @@ Para mais informações sobre o projeto **Xadrez para Todos** ou sobre este quiz
 
 - **📧 Email:** ircontif@gmail.com
 - **🔗 LinkedIn:** [Isabella Conti](https://www.linkedin.com/in/isabellarconti/)
+
+## Demonstração em Vídeo
+
+Aqui está um vídeo demonstrativo do quiz em ação:
+
+<video width="640" height="360" controls>
+  <source src="videoquiz.mp4" type="video/mp4">
+  Seu navegador não suporta a tag de vídeo.
+</video>
