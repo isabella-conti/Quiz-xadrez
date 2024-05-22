@@ -104,6 +104,19 @@ function finishGame() {
 }
 
 
+let currentLeft = 0;
+
+function moveImageRight() {
+    const image = document.getElementById('peaoMovimenta');
+    currentLeft += 50; 
+    image.style.left = currentLeft + 'px';
+}
+
+function moveImageLeft() {
+    const image = document.getElementById('peaoMovimenta');
+    currentLeft -= 50;
+    image.style.left = currentLeft + 'px';
+}
 
 
 const questions = [

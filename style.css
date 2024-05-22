@@ -12,7 +12,7 @@
 
 body{
     background-image: url('./background-inicio.png');
-    background-size: 90%;
+    background-size: 91%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,6 +26,35 @@ body{
     }
 }
 
+.peao-movimenta {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 150px; 
+    height: auto; 
+    margin: 10px;
+
+}
+.button-move {
+    background-color: #f7ea7b;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    font-size: 50px;
+}
+.button-move2 {
+    background-color: #f7ea7b;
+    position: fixed;
+    bottom: 0;
+    right: 140px;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    font-size: 50px;
+}
 
 .container {
     z-index: 0;
@@ -86,7 +115,7 @@ body{
       inset 4px 0px 1px 1px lightgray;  
 }
 
-.button:hover {
+.button:not(:disabled):hover {
     cursor: pointer;
       background-color: #cc40b5;
   }
@@ -132,11 +161,11 @@ body{
 }
 
 .correct{
-    background-color: green;
+    background-color: rgb(6, 145, 6);
 }
 
 .incorrect{
-    background-color: red;
+    background-color: rgb(238, 79, 79);
 }
 
 .final-message{
