@@ -52,5 +52,5 @@ Para mais informações sobre o projeto **Xadrez para Todos** ou sobre este quiz
 
 
 
-![Imagem do quiz](quiz-isa.png)
+![Imagem do quiz](quiz-isa.PNG)
 
