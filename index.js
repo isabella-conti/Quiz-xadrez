@@ -10,6 +10,7 @@ $nextQuestionButton.addEventListener("click", displayNextQuestion)
 
 let currentQuestionIndex = 0
 let totalCorrect = 0
+let currentLeft = 0;
 
 function startGame() {
     $startGameButton.classList.add("hide")
@@ -53,6 +54,7 @@ function selectAnswer(event) {
     if (answerClicked.dataset.correct) {
         document.body.classList.add("correct")
         totalCorrect++
+        moveImageRight();
     } else {
         document.body.classList.add("incorrect")
     }
@@ -104,17 +106,19 @@ function finishGame() {
 }
 
 
-let currentLeft = 0;
 
 function moveImageRight() {
     const image = document.getElementById('peaoMovimenta');
-    currentLeft += 50; 
+    currentLeft += 200; 
     image.style.left = currentLeft + 'px';
+    if (currentLeft >= 50) {
+        startGame();
+    }
 }
 
 function moveImageLeft() {
     const image = document.getElementById('peaoMovimenta');
-    currentLeft -= 50;
+    currentLeft -= 200;
     image.style.left = currentLeft + 'px';
 }
 

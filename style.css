@@ -27,7 +27,7 @@ body{
 }
 
 .peao-movimenta {
-    position: fixed; 
+    position: absolute; 
     bottom: 0; 
     left: 0; 
     width: 150px; 
@@ -35,8 +35,8 @@ body{
     margin: 10px;
 
 }
-.button-move {
-    background-color: #f7ea7b;
+/* .button-move {
+    background-color: #0089fa;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -46,7 +46,7 @@ body{
     font-size: 50px;
 }
 .button-move2 {
-    background-color: #f7ea7b;
+    background-color: #0089fa;
     position: fixed;
     bottom: 0;
     right: 140px;
@@ -54,7 +54,7 @@ body{
     height: 100px;
     margin: 30px;
     font-size: 50px;
-}
+} */
 
 .container {
     z-index: 0;
