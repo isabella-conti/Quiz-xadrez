@@ -23,7 +23,7 @@ Essa é a versão 1.0 do Quiz, ainda tem novas funcionalidades chegando! 🚀
 
 1. Clone este repositório:
     ```sh
-    git clone https://github.com/seu-usuario/Quiz-xadrez.git
+    git clone https://github.com/isabella-conti/Quiz-xadrez.git
     ```
 
 2. Navegue até o diretório do projeto:
