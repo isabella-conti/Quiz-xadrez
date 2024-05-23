@@ -11,8 +11,8 @@
 }
 
 body{
-    background-image: url('./background-inicio.png');
-    background-size: 91%;
+    background-image: url('img/background-inicio.png');
+    background-size: 90%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ body{
 
 @media (max-width: 768px) {
     body {
-        background-image: url('./background-menor.png');
+        background-image: url('img/background-menor.png');
         background-size: cover; 
     }
 }
@@ -178,6 +178,10 @@ body{
 .final-message span{
     display: block;
     margin-top: 8px;
+}
 
+.chave {
+    width: 200px;
+    height: 200px;
 }
 

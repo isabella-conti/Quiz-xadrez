@@ -101,6 +101,7 @@ function finishGame() {
         <button onClick=window.location.reload() class="button">
             Refazer teste
         </button>
+        <img src="img/chave.gif" alt="chave" class="chave">
 
     `
 }
