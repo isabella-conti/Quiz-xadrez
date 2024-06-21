@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="historias.css">
     <script src="index.js" async></script>
     <title>Quiz</title>
 </head>
 <body>
+    <header>
+        <h1>Xadrez para Todos</h1>
+    </header>
+    <main>
+        <div id="stories-list">
+            <button onclick="showStory('story1')">A Origem do Xadrez</button>
+            <button onclick="showStory('story2')">A Partida Imortal</button>
+            <button onclick="showStory('story3')">O Grande Mestre Bobby Fischer</button>
+        </div>
+        <div id="story-content">
+            <h2 id="story-title"></h2>
+            <p id="story-text"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
     <div class="container">
         <div class="questions-container hide">
             <span class="question">Pergunta?</span>
